@@ -12,9 +12,9 @@ namespace OrientacaoObjeto.Domain
         private readonly string _nome;
         public string Endereco { get; set; }
 
-        public Pessoa(string Nome)
+        public Pessoa(string nome)
         {
-            _nome = Nome;
+            _nome = nome;
         }
 
         // TODO 3.2 - Comportamento: São métodos que processam informação, retornam ou não informação ou
@@ -22,9 +22,9 @@ namespace OrientacaoObjeto.Domain
 
         // TODO 5.3 - Virtual: O modificador virtual server para definir um comportamento genérico, porém deixando
         // a possibilidae de qualquer classe que herdar poder reescrever o comportamento.
-        public virtual string MontarEndereco(string Logradouro, string Bairro, string Cidade, string Cep)
+        public virtual string MontarEndereco(string logradouro, string bairro, string cidade, string cep)
         {
-            var endereco = $"{Logradouro} - {Bairro} / {Cidade} -> {Cep}";
+            var endereco = $"{logradouro} - {bairro} / {cidade} -> {cep}";
             Endereco = endereco;
             return endereco;
         }
