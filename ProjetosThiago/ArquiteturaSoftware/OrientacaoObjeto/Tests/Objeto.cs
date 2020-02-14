@@ -15,7 +15,8 @@ namespace OrientacaoObjeto.Tests
                 DataEmissao = DateTime.Now,
                 ValorTotal = 4
             };
+
+            Console.WriteLine(casa.NomeEmissor);
         }
-        
     }
 }

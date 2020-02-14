@@ -17,14 +17,13 @@ namespace OrientacaoObjeto.Domain
             _nome = nome;
         }
 
-        // TODO 3.2 - Comportamento: São métodos que processam informação, retornam ou não informação ou
-        //apenas alteram e estado da classe manipulando suas propriedades.
+        // TODO 3.2 - Comportamento: São métodos que processam informação, retornam ou não informação ou apenas alteram e estado da classe manipulando suas propriedades.
 
         // TODO 5.3 - Virtual: O modificador virtual server para definir um comportamento genérico, porém deixando
         // a possibilidae de qualquer classe que herdar poder reescrever o comportamento.
         public virtual string MontarEndereco(string logradouro, string bairro, string cidade, string cep)
         {
-            var endereco = $"{logradouro} - {bairro} / {cidade} -> {cep}";
+            var endereco = $"Endereço {_nome}: {logradouro} - {bairro} / {cidade} -> {cep}";
             Endereco = endereco;
             return endereco;
         }

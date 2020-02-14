@@ -1,5 +1,6 @@
 ﻿using System;
 using OrientacaoObjeto.Tests;
+// ReSharper disable UnusedParameter.Local
 
 namespace OrientacaoObjeto
 {
